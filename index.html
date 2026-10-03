@@ -1,1 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Mundo Azul vs Rosas Personalizados</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(90deg, #1677ff, #e94b9b);
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .inicio {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #e8f2ff, #fff0f8);
+        }
+
+        .inicio h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .inicio h1 span {
+            color: #e94b9b;
+        }
+
+        .inicio p {
+            font-size: 20px;
+            color: #555;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 25px;
+            background: #1677ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 80px 7%;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .titulo h2 {
+            font-size: 35px;
+            color: #1677ff;
+        }
+
+        .sobre {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .produtos {
+            background: #f6f8fc;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .card .icone {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #e94b9b;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .foto {
+            height: 220px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #dceaff, #ffe0ef);
+            font-weight: bold;
+            color: #555;
+        }
+
+        .contato {
+            text-align: center;
+            background: linear-gradient(135deg, #eef5ff, #fff0f8);
+        }
+
+        .whatsapp {
+            display: inline-block;
+            margin-top: 25px;
+            background: #25D366;
+            color: white;
+            padding: 16px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .inicio h1 {
+                font-size: 36px;
+            }
+
+            .cards,
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        💙 Mundo Azul vs Rosas 💗
+    </div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+</header>
+
+<section class="inicio" id="inicio">
+
+    <div>
+
+        <h1>
+            Mundo Azul vs <span>Rosas</span>
+        </h1>
+
+        <p>
+            Personalizados feitos com carinho para transformar
+            seus momentos em lembranças especiais.
+        </p>
+
+        <a href="#produtos" class="botao">
+            Conheça nossos produtos
+        </a>
+
+    </div>
+
+</section>
+
+<section id="sobre">
+
+    <div class="titulo">
+        <h2>Sobre nós</h2>
+    </div>
+
+    <div class="sobre">
+
+        <p>
+            A <strong>Mundo Azul vs Rosas Personalizados</strong>
+            trabalha com criatividade e carinho para criar
+            produtos personalizados para diferentes ocasiões.
+        </p>
+
+        <br>
+
+        <p>
+            Escolha seu produto, envie sua ideia e deixe a
+            personalização por nossa conta!
+        </p>
+
+    </div>
+
+</section>
+
+<section class="produtos" id="produtos">
+
+    <div class="titulo">
+        <h2>Nossos Produtos</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icone">🎁</div>
+
+            <h3>Presentes Personalizados</h3>
+
+            <p>
+                Presentes especiais para aniversários,
+                datas comemorativas e momentos importantes.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icone">☕</div>
+
+            <h3>Canecas Personalizadas</h3>
+
+            <p>
+                Canecas com nomes, frases, fotos e
+                temas escolhidos por você.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icone">🎨</div>
+
+            <h3>Artes Personalizadas</h3>
+
+            <p>
+                Criamos artes especiais para deixar
+                seus produtos únicos.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="galeria">
+
+    <div class="titulo">
+        <h2>Galeria</h2>
+    </div>
+
+    <div class="galeria">
+
+        <div class="foto">
+            📸 Seu produto aqui
+        </div>
+
+        <div class="foto">
+            📸 Seu produto aqui
+        </div>
+
+        <div class="foto">
+            📸 Seu produto aqui
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contato" id="contato">
+
+    <div class="titulo">
+        <h2>Fale conosco</h2>
+    </div>
+
+    <p>
+        Gostou de algum produto? Entre em contato
+        para fazer sua encomenda!
+    </p>
+
+    <!-- TROQUE O NÚMERO ABAIXO PELO WHATSAPP DA EMPRESA -->
+
+    <a
+        class="whatsapp"
+        href="https://wa.me/5500000000000"
+        target="_blank">
+        📱 Falar pelo WhatsApp
+    </a>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Mundo Azul vs Rosas Personalizados
+    </p>
+
+    <p>
+        Todos os direitos reservados.
+    </p>
+
+</footer>
+
+</body>
+</html>
